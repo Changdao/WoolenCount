@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SWoolenCount" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HN7-G7-WIE"/>
+                        <viewControllerLayoutGuide type="bottom" id="aQp-7f-SNL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-iW-Nac">
+                                <rect key="frame" x="192" y="57" width="217" height="30"/>
+                                <state key="normal" title="NORTH">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T5J-zj-TRc" kind="show" id="Rhe-fB-vbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPj-hP-VtG">
+                                <rect key="frame" x="26" y="124" width="217" height="30"/>
+                                <state key="normal" title="WEST">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Tj-0pg">
+                                <rect key="frame" x="329" y="124" width="217" height="30"/>
+                                <state key="normal" title="EAST">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6L-DM-MHX">
+                                <rect key="frame" x="192" y="194" width="217" height="30"/>
+                                <state key="normal" title="SOUTH">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cO3-Tj-0pg" secondAttribute="centerX" constant="-120" id="H6Z-dH-nsp"/>
+                            <constraint firstAttribute="centerX" secondItem="8dv-iW-Nac" secondAttribute="centerX" id="XKx-LI-7ox"/>
+                            <constraint firstAttribute="centerX" secondItem="k6L-DM-MHX" secondAttribute="centerX" id="erV-CM-cN8"/>
+                            <constraint firstAttribute="centerX" secondItem="yPj-hP-VtG" secondAttribute="centerX" constant="120" id="jvp-2a-KWN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="d7x-vh-uxQ">
+            <objects>
+                <viewController id="T5J-zj-TRc" customClass="DetailViewController" customModule="SWoolenCount" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zDl-7H-fc2"/>
+                        <viewControllerLayoutGuide type="bottom" id="OOM-1P-K69"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Is-sv-JVR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="90" affinity="minX"/>
+                            <userLayoutGuide location="90" affinity="minX"/>
+                            <userLayoutGuide location="42" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Jt-Vy-q0B">
+                                <rect key="frame" x="143" y="109" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="editingChanged" id="FaQ-Mw-WW6"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l2P-Mx-wpX">
+                                <rect key="frame" x="12" y="109" width="123" height="29"/>
+                                <segments>
+                                    <segment title="进"/>
+                                    <segment title="出"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="valueChanged" id="g5t-dC-48d"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-8Q-e9s">
+                                <rect key="frame" x="214" y="108" width="94" height="29"/>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-0c-CSq">
+                                <rect key="frame" x="-46" y="42" width="211" height="30"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="SPq-Tw-evC" eventType="touchUpInside" id="Kjk-Si-TdJ"/>
+                                    <segue destination="vXZ-lx-hvc" kind="popoverPresentation" popoverAnchorView="0nB-0c-CSq" id="ZUO-1S-6Fi">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-50-6Fw">
+                                <rect key="frame" x="143" y="177" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="editingChanged" id="io4-md-gW1"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-O1-j68">
+                                <rect key="frame" x="12" y="178" width="123" height="29"/>
+                                <segments>
+                                    <segment title="进"/>
+                                    <segment title="出"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="valueChanged" id="hAx-tI-Kjr"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fea-Pc-N4b">
+                                <rect key="frame" x="214" y="176" width="94" height="29"/>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVV-gU-gbu">
+                                <rect key="frame" x="143" y="242" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="editingChanged" id="vyC-YZ-7hr"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="axI-mx-viL">
+                                <rect key="frame" x="12" y="243" width="123" height="29"/>
+                                <segments>
+                                    <segment title="进"/>
+                                    <segment title="出"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="valueChanged" id="Q25-Zr-yay"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-An-7Jj">
+                                <rect key="frame" x="214" y="241" width="94" height="29"/>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCo-Gr-37h">
+                                <rect key="frame" x="143" y="308" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="editingChanged" id="wEk-c2-Mse"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e9X-Dz-VLC">
+                                <rect key="frame" x="12" y="309" width="123" height="29"/>
+                                <segments>
+                                    <segment title="进"/>
+                                    <segment title="出"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="T5J-zj-TRc" eventType="valueChanged" id="7Qs-8h-3HZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="suL-J4-v03">
+                                <rect key="frame" x="214" y="307" width="94" height="29"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="East" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-qu-9Nd">
+                                <rect key="frame" x="12" y="80" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="South" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeR-9s-zwK">
+                                <rect key="frame" x="12" y="147" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="West" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONo-9T-0Z0">
+                                <rect key="frame" x="12" y="214" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="North" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxp-c5-EIN">
+                                <rect key="frame" x="12" y="280" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdq-2L-r4z">
+                                <rect key="frame" x="156" y="42" width="211" height="30"/>
+                                <state key="normal" title="完成">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="SPq-Tw-evC" eventType="touchUpInside" id="t06-11-3dp"/>
+                                    <segue destination="vXZ-lx-hvc" kind="popoverPresentation" popoverAnchorView="Zdq-2L-r4z" id="o6W-YQ-8a2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T6B-An-7Jj" firstAttribute="leading" secondItem="rVV-gU-gbu" secondAttribute="trailing" constant="8" id="06k-PV-z96"/>
+                            <constraint firstItem="fea-Pc-N4b" firstAttribute="leading" secondItem="uf3-50-6Fw" secondAttribute="trailing" constant="8" id="ALs-7S-WBr"/>
+                            <constraint firstItem="NCo-Gr-37h" firstAttribute="leading" secondItem="e9X-Dz-VLC" secondAttribute="trailing" constant="8" id="Rga-Pt-J9r"/>
+                            <constraint firstItem="uf3-50-6Fw" firstAttribute="leading" secondItem="yhe-O1-j68" secondAttribute="trailing" constant="8" id="XvA-oo-HmL"/>
+                            <constraint firstItem="rVV-gU-gbu" firstAttribute="leading" secondItem="axI-mx-viL" secondAttribute="trailing" constant="8" id="gV4-C3-MfH"/>
+                            <constraint firstItem="1Jt-Vy-q0B" firstAttribute="leading" secondItem="l2P-Mx-wpX" secondAttribute="trailing" constant="8" id="gWy-sM-e8O"/>
+                            <constraint firstItem="suL-J4-v03" firstAttribute="leading" secondItem="NCo-Gr-37h" secondAttribute="trailing" constant="8" id="md2-bF-gPd"/>
+                            <constraint firstItem="ITs-8Q-e9s" firstAttribute="leading" secondItem="1Jt-Vy-q0B" secondAttribute="trailing" constant="8" id="wFo-83-cw3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VKX-d4-aIf"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="480"/>
+                    <connections>
+                        <outlet property="btnOK" destination="Zdq-2L-r4z" id="aS1-Ud-35G"/>
+                        <outlet property="edtEast" destination="1Jt-Vy-q0B" id="G6l-QP-4LK"/>
+                        <outlet property="edtNorth" destination="NCo-Gr-37h" id="HGy-0v-OYM"/>
+                        <outlet property="edtSouth" destination="uf3-50-6Fw" id="H0z-Ys-cnp"/>
+                        <outlet property="edtWest" destination="rVV-gU-gbu" id="3xe-f4-rum"/>
+                        <outlet property="sgcEast" destination="l2P-Mx-wpX" id="nh8-jC-DBn"/>
+                        <outlet property="sgcNorth" destination="e9X-Dz-VLC" id="q6d-rw-wbd"/>
+                        <outlet property="sgcSouth" destination="yhe-O1-j68" id="MfQ-I1-r7S"/>
+                        <outlet property="sgcWest" destination="axI-mx-viL" id="hAg-6X-iVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPq-Tw-evC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZUO-1S-6Fi"/>
+    </inferredMetricsTieBreakers>
+</document>
